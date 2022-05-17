@@ -1,0 +1,19 @@
+<script>
+    function pulalinha() {
+        document.write("<br>");
+    }
+    function mostra(frase) {
+        document.write(frase)
+        pulalinha();
+    }
+    function calculaSalario(valor1, valor2, valor3) {
+        return (valor1 + valor2 + valor3) / 3;
+    }
+    var nome = prompt("Digite o nome do funcionário:");
+    var salariol = parseFloat(prompt("Digite o salário do funcionário"));
+    var salario2 = parseFloat(prompt("Digite o segundo salário do funcionário:"));
+    var salario3 = parseFloat(prompt("Digite o terceiro salário do funcionário:"));
+    var mediaSalario = calculaSalario(salariol, salario2, salario3);
+
+    document.write(nome + "a média do seu salário é:" + mediaSalario);
+</script>
